@@ -4,7 +4,7 @@ import os
 from random import randint
 
 # redis_store = redis.Redis(host='127.0.0.1', port=6379, db=1)  # 操作的redis配置
-redis_store = redis.Redis(host='127.0.0.1', port=6379, db=3,
+redis_store = redis.Redis(host='127.0.0.1', port=6379, db=0,
                           decode_responses=True)  # 操作的redis配置
 
 # 常量
