@@ -4,12 +4,12 @@ import os
 from random import randint
 
 # redis_store = redis.Redis(host='127.0.0.1', port=6379, db=1)  # 操作的redis配置
-redis_store = redis.Redis(host='127.0.0.1', port=6379, password="123456", db=3,
+redis_store = redis.Redis(host='127.0.0.1', port=6379, db=3,
                           decode_responses=True)  # 操作的redis配置
 
 # 常量
-wx_appid = "xxx"  # 微信小程序appid
-wx_secret = "xxx"  # 微信小程序app密码
+wx_appid = "wxd433ba57ae9f04da"  # 微信小程序appid
+wx_secret = "d55283a28554b2f9c79e438e58c35f2c"  # 微信小程序app密码
 qq_appid = 'xxx'  # qq小程序appid
 qq_secret = 'xxx'  # qq小程序appid密码
 
@@ -47,7 +47,7 @@ class Config:
 # 开发环境
 class DevelopmentConfig(Config):
     """开发模式的配置信息"""
-    SQLALCHEMY_DATABASE_URI = 'mysql+pymysql://root:password@127.0.0.1:3306/flash_card_dev?charset=utf8mb4'
+    SQLALCHEMY_DATABASE_URI = 'mysql+pymysql://root:123456@127.0.0.1:3306/flash_card_dev?charset=utf8mb4'
     DEBUG = True
 
 
